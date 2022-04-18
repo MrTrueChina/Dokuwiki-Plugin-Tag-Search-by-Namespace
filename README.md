@@ -6,6 +6,10 @@
 
 ## 使用方式：
 
+### 0. 安装插件
+
+由于本插件没有在 DokuWiki 发布，您需要手动在 [releases](https://github.com/MrTrueChina/Dokuwiki-Plugin-Tag-Search-by-Namespace/releases) 页面获取插件并安装
+
 ### 1. 进入搜索页面
 
 如果使用的模板带有右侧工具栏则在右侧工具栏会显示一个打开搜索页面的按钮。

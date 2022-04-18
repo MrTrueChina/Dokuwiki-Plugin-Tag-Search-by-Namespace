@@ -1,0 +1,7 @@
+base    tagsearchbynamespace
+author  Mr.true.China
+email   mr.true.china@gmail.com
+date    2022-04-18
+name    Tag Search by Namespace
+desc    Added a page that can search through the tag namespace and use the tags under the namespace.
+url     http://dokuwiki.org/plugin:tagsearchbynamespace

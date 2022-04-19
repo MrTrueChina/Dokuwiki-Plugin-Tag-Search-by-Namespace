@@ -22,14 +22,16 @@ use \dokuwiki\Extension\Event;
 use \dokuwiki\plugin\tagsearchbynamespace\SearchButton;
 use \dokuwiki\Form\Form;
 
+global $INPUT;
+
 // 当 form 发出 tagsearchbynamespace_searchbutton 的 POST 时这段代码会被调用，tagsearchbynamespace_searchbutton 是在后面写的独有字段
-if (isset($_POST['tagsearchbynamespace_searchbutton'])) {
+if ($INPUT->has('tagsearchbynamespace_searchbutton')) {
 	// 声明全局变量
 	global $tagsearchbynamespaceNamespaceText;
 	global $tagsearchbynamespaceTagsText;
 	// 把请求里的输入框文本保存进去
-	$tagsearchbynamespaceNamespaceText = $_POST['namespaceInput'];
-	$tagsearchbynamespaceTagsText = $_POST['tagsInput'];
+	$tagsearchbynamespaceNamespaceText = $INPUT->str('namespaceInput');
+	$tagsearchbynamespaceTagsText = $INPUT->str('tagsInput');
 }
 
 /**
